@@ -1,0 +1,63 @@
+{%extends 'QuizApp/base.html'%}
+{%block parent_block%}
+{% load static%}
+
+<center>
+<table>
+	<tr>
+	<td>
+		<div class="card" style="width: 30rem;min-height: 15rem">
+  			<div class="card-body">
+    			<h3 class="card-title"> Management Task </h3>
+    			<p class="card-text"> This task is assigned to you because you are too dumb to solve this. </p>
+    			<a href="#management" class="btn btn-primary">do the task</a>
+  			</div>
+		</div>
+	</td>
+	<td>
+		<div class="card" style="width: 30rem;min-height: 15rem">
+  			<div class="card-body">
+    			<h3 class="card-title"> General </h3>
+    			<p class="card-text"> This task is assigned to you because you are too dumb to solve this. </p>
+    			<a href="#" class="btn btn-primary">do the task</a>
+  			</div>
+		</div>
+	</td>
+	<td>
+		<div class="card" style="width: 30rem;min-height: 15rem">
+  			<div class="card-body">
+    			<h3 class="card-title"> Maths </h3>
+    			<p class="card-text"> This task is assigned to you because you are too dumb to solve this. </p>
+    			<a href="#" class="btn btn-primary">do the task</a>
+  			</div>
+		</div>
+	</td>
+	</tr>
+</table>
+</center><br>
+
+<center>
+<form method="POST">
+<p id="management">Q.1 What was a challenging project, and how did you manage it?</p>
+<textarea value='Enter your Answer.'></textarea>
+<p >Q.2 What's your leadership style?</p>
+<textarea value='Enter your Answer.'></textarea>
+<p>Q.3 What's your communication style?</p>
+<textarea value='Enter your Answer.'></textarea>
+<p>Q.4 What’s your ideal project?</p>
+<textarea value='Enter your Answer.'></textarea>
+<p>Q.5 How do you manage team members that are not working to their full potential?</p>
+<textarea value='Enter your Answer.'></textarea>
+<p>Q.6 How do you work with customers, sponsors and stakeholders?</p>
+<textarea value='Enter your Answer.'></textarea>
+<p>Q.7 Do you delegate?</p>
+<textarea value='Enter your Answer.'></textarea>
+<p>Q.8 How do you prioritize tasks on a project?</p>
+<textarea value='Enter your Answer.'></textarea></br>
+<input type="submit" value="Submit" class="btn btn-primary"></br>
+{%csrf_token%}
+</form>
+</center>
+
+
+{%endblock%}

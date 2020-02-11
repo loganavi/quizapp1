@@ -1,0 +1,14 @@
+.form-group input
+{
+  width: 300px;
+}
+.para {
+		height: 500px;
+		width: 700px;
+		margin: 30px;
+		border: 2px solid black;
+
+}
+.para h1{
+	color: cadetblue;
+}

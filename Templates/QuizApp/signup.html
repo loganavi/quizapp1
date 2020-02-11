@@ -1,0 +1,10 @@
+{% extends 'QuizApp/base.html'%}
+{% block parent_block%}
+<div>
+<form method="POST" >
+	{{sform.as_p}}
+	{%csrf_token%}
+	<button type="submit">Sign Up</button>
+</form>
+</div>
+{%endblock%}

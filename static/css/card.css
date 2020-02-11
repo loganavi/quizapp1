@@ -1,0 +1,8 @@
+.card{
+	background: cadetblue;
+	color:white;
+	border:3px grey;
+	border-radius: 10px;
+	margin:30px;
+	text-align: center;
+}

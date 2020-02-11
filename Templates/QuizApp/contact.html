@@ -1,0 +1,41 @@
+{% extends 'QuizApp/base.html'%}
+{% block parent_block%}
+{%load static%}
+
+    <section class="Material-contact-section section-padding section-dark">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-12 wow animated fadeInLeft" data-wow-delay=".2s">
+                  <h1 class="section-title">We Love to Help You!!!</h1>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-md-6 mt-3 contact-widget-section2 wow animated fadeInLeft" data-wow-delay=".2s">
+                <h4>We are glad to hear from you. please fill the form and send us Feedback/Questions/Message or any type of Help You Want. We are Happy to Help You.</h4>
+
+                <div class="find-widget">
+                 Address: apke dil mein.
+                </div>
+                <div class="find-widget">
+                  Phone: +91-79742 91161
+                </div>
+                <div class="find-widget">
+                   Program: Mon to Sat: 09:30 AM - 7:30 PM
+                </div>
+              </div>
+              <div class="col-md-6 wow animated fadeInRight" data-wow-delay=".2s">
+                 
+
+                  <form class="shake" role="form" method="POST" id="contactForm" name="contact-form" data-toggle="validator">
+                      <div class="form-group label-floating">
+                        <label class="control-label" for="name">{%csrf_token%}{{cForm.as_p}}</label>
+                      </div>
+                      <input type="submit" value="Send Message" />
+                  </form>
+                  {{mydict}}
+              </div>
+          </div>
+      </div>
+    </section>
+
+{%endblock%}
